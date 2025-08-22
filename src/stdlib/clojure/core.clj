@@ -5968,7 +5968,7 @@ Note that read can execute code (controlled by *read-eval*),
             
             ;; load from embedded resource
             (= code-source clojure.lang.RuntimeBootstrapFlag+CodeSource/EmbeddedResource)
-            (throw (NotSupportedException. "Loading from embedded resources is not supported")))))))
+            (throw (NotSupportedException. (str "Loading from embedded resources is not supported, file: " relative-path))))))))
 
 #_
 (def ^:dynamic
