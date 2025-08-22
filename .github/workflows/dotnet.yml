@@ -93,7 +93,7 @@ jobs:
         mono "../nostrand/bin/x64/Debug/net471/Nostrand.exe" "build/bootstrap"
    # Store the bootstrap folder with the new assemblies as artifact for 90 days
     - name: Store new DLLs as a github artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: magic-assemblies
         path: ./magic/bootstrap
