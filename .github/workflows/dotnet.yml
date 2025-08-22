@@ -54,10 +54,10 @@ jobs:
         cd Clojure.Runtime/
         dotnet build
     # Build Clojure.Runtime inside magic folder
-    - name: Generate Clojure.Runtime assemblies of magic
-      run: |
-        cd magic/Magic.Runtime/
-        dotnet build
+    # - name: Generate Clojure.Runtime assemblies of magic
+    #   run: |
+    #     cd magic/Magic.Runtime/
+    #     dotnet build
     # Build Magic with Nostrand repo DLLs (old Dlls)
     - name: Build Nostrand
       run: |
